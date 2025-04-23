@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Face</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center h-screen">
+    <h1 class="text-3xl font-bold mb-8">Save Face</h1>
+    <form action="/save_face" method="post">
+        <label for="save_yes">
+            <input type="radio" id="save_yes" name="save_choice" value="y">
+            Yes
+        </label>
+        <br>
+        <label for="save_no">
+            <input type="radio" id="save_no" name="save_choice" value="n">
+            No
+        </label>
+        <br>
+        <label for="new_name">Name:</label>
+        <input type="text" id="new_name" name="new_name" class="border border-gray-400 p-2 mb-4">
+        <br>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
+    

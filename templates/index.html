@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Face Recognition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center h-screen">
+    <h1 class="text-3xl font-bold mb-8">Start Face Recognition</h1>
+    <form action="/start" method="post">
+        <label for="mode1">
+            <input type="radio" id="mode1" name="mode" value="1">
+            Recognize existing face data
+        </label>
+        <br>
+        <label for="mode2">
+            <input type="radio" id="mode2" name="mode" value="2">
+            Add new face data
+        </label>
+        <br>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Start
+        </button>
+    </form>
+    <p class="text-gray-600 mt-4">If you choose "Add new face data", a new window will pop up when an unknown face is detected for a while.</p>
+</body>
+</html>
+    
